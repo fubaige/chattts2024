@@ -1,0 +1,10 @@
+version: '1.0'
+services:
+  my_service:
+    image: my_image:latest
+    ports:
+      - "8080:80"
+    environment:
+      - MY_ENV_VAR=value
+    volumes:
+      - ./data:/data
